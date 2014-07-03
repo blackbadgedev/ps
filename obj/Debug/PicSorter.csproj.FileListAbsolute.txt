@@ -1,0 +1,9 @@
+c:\users\pc\documents\visual studio 2013\Projects\PicSorter\PicSorter\bin\Debug\PicSorter.exe.config
+c:\users\pc\documents\visual studio 2013\Projects\PicSorter\PicSorter\bin\Debug\PicSorter.exe
+c:\users\pc\documents\visual studio 2013\Projects\PicSorter\PicSorter\bin\Debug\PicSorter.pdb
+c:\users\pc\documents\visual studio 2013\Projects\PicSorter\PicSorter\obj\Debug\PicSorter.Form1.resources
+c:\users\pc\documents\visual studio 2013\Projects\PicSorter\PicSorter\obj\Debug\PicSorter.Input.resources
+c:\users\pc\documents\visual studio 2013\Projects\PicSorter\PicSorter\obj\Debug\PicSorter.Properties.Resources.resources
+c:\users\pc\documents\visual studio 2013\Projects\PicSorter\PicSorter\obj\Debug\PicSorter.csproj.GenerateResource.Cache
+c:\users\pc\documents\visual studio 2013\Projects\PicSorter\PicSorter\obj\Debug\PicSorter.exe
+c:\users\pc\documents\visual studio 2013\Projects\PicSorter\PicSorter\obj\Debug\PicSorter.pdb
