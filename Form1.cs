@@ -32,7 +32,20 @@ namespace PicSorter
             directories.Add(button8, "");
             directories.Add(button9, "");
 
-            this.KeyPress += Form1_KeyPress;
+            foreach (Button b in directories.Keys)
+            {
+                b.Text = "";
+                b.Click += b_Click;
+            }
+                
+
+            this.Focus();
+            this.BringToFront();            
+        }
+
+        void b_Click(object sender, EventArgs e)
+        {
+            
         }
         public Button getUnassignedButton()
         {
@@ -43,23 +56,6 @@ namespace PicSorter
             }
 
             return null;
-        }
-        void Form1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            switch (e.KeyChar)
-            {
-                //Associate keys to different buttons and send that button to the click handler
-                case '7': button_Click(directories.ElementAt<KeyValuePair<Button, string>>(0).Key, null); break;
-                case '8': button_Click(directories.ElementAt<KeyValuePair<Button, string>>(1).Key, null); break;
-                case '9': button_Click(directories.ElementAt<KeyValuePair<Button, string>>(2).Key, null); break;
-                case '4': button_Click(directories.ElementAt<KeyValuePair<Button, string>>(3).Key, null); break;
-                case '5': button_Click(directories.ElementAt<KeyValuePair<Button, string>>(4).Key, null); break;
-                case '6': button_Click(directories.ElementAt<KeyValuePair<Button, string>>(5).Key, null); break;
-                case '1': button_Click(directories.ElementAt<KeyValuePair<Button, string>>(6).Key, null); break;
-                case '2': button_Click(directories.ElementAt<KeyValuePair<Button, string>>(7).Key, null); break;
-                case '3': button_Click(directories.ElementAt<KeyValuePair<Button, string>>(8).Key, null); break;
-                default: break;
-            }
         }
         private void registerDirectory(Button button, string directory)
         {
@@ -88,8 +84,6 @@ namespace PicSorter
             if (button.Name != "")
             {
                 MessageBox.Show("Not Implemented: send file to directory " + directories[button]);
-
-
             }
             else
             {
@@ -138,14 +132,25 @@ namespace PicSorter
                         break;
                     
                     //Ask the user if they want to auto map this folder
-                    DialogResult userResponseDoIncludeFolder = MessageBox.Show("Auto map " + directory, "", MessageBoxButtons.YesNo);
+                    DialogResult userResponseDoIncludeFolder = MessageBox.Show("Auto map " + directory, "", MessageBoxButtons.YesNoCancel);
 
                     if (userResponseDoIncludeFolder == System.Windows.Forms.DialogResult.Yes)
                     {
                         registerDirectory(button, directory);
-                    }                    
+                    }
+                    else if (userResponseDoIncludeFolder == System.Windows.Forms.DialogResult.Cancel)
+                        break;
                 }
             }
+        }
+        private void Form1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            MessageBox.Show("fuck2");
+        }
+
+        private void Form1_PreviewKeyDown_1(object sender, PreviewKeyDownEventArgs e)
+        {
+            MessageBox.Show("fuck");
         }
     }
 }

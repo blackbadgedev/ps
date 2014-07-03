@@ -7,3 +7,4 @@ c:\users\pc\documents\visual studio 2013\Projects\PicSorter\PicSorter\obj\Debug\
 c:\users\pc\documents\visual studio 2013\Projects\PicSorter\PicSorter\obj\Debug\PicSorter.csproj.GenerateResource.Cache
 c:\users\pc\documents\visual studio 2013\Projects\PicSorter\PicSorter\obj\Debug\PicSorter.exe
 c:\users\pc\documents\visual studio 2013\Projects\PicSorter\PicSorter\obj\Debug\PicSorter.pdb
+C:\Users\PC\documents\visual studio 2013\Projects\PicSorter\PicSorter\obj\Debug\PicSorter.csprojResolveAssemblyReference.cache
